@@ -1,7 +1,7 @@
 const spotifyApi = require("../config/spotify.config");
 
 module.exports.home = (req, res, next) => {
-    res.render("misc/home");
+    res.render("home");
 };
 
 module.exports.searchArtists = (req, res, next) => {
