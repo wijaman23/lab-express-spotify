@@ -1,0 +1,16 @@
+<div class="container-songs">
+    {{#each songs as |song|}}
+        <div class="container-song">
+            <div>
+                <h5>{{song.name}}</h5>
+            </div>
+            <div class="song-audio">
+                <audio controls>
+                    <source src="{{song.preview_url}}" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    {{/each}}
+    <input type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
+</div>
+

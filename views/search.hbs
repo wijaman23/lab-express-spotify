@@ -1,0 +1,16 @@
+<div class="container-search">
+    <div class="d-flex flex-wrap">
+        {{#each artists as |artist|}}
+            <div class="p-2">
+                <div><img class="img-searh" src="{{artist.images.0.url}}"></div>
+                <div class="container-text-search">
+                    <div class="text-search"><h5>{{artist.name}}</h5> </div>
+                    <div class="btn-search"><a class="btn btn-danger" href="/albums/{{artist.id}}" role="button">View Album</a></div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+    <input type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
+</div>
+
+
